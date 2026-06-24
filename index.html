@@ -396,15 +396,24 @@
     footer a:hover { text-decoration: underline; }
 
     /* PHOTO */
-    .hero-photo {
+    .hero-photo-wrap {
       width: 140px;
       height: 140px;
       border-radius: 50%;
-      object-fit: cover;
-      object-position: center 38%;
+      overflow: hidden;
       border: 3px solid rgba(59,130,246,0.4);
       margin-bottom: 1.5rem;
       box-shadow: 0 0 40px rgba(59,130,246,0.15);
+      flex-shrink: 0;
+    }
+
+    .hero-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      transform: scale(1.25);
+      transform-origin: center 22%;
     }
 
     /* MOBILE */
@@ -442,7 +451,7 @@
 
   <!-- HERO -->
   <div id="hero">
-    <img src="nathan.png" alt="Nathan Katzaroff" class="hero-photo" />
+    <div class="hero-photo-wrap"><img src="nathan.png" alt="Nathan Katzaroff" class="hero-photo" /></div>
     <span class="hero-tag">Founder · Athlete · Builder · Pre-Med</span>
     <h1>Nathan <span>Katzaroff</span></h1>
     <p class="hero-sub">
