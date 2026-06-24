@@ -395,6 +395,18 @@
     footer a { color: var(--accent-light); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
+    /* PHOTO */
+    .hero-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid rgba(59,130,246,0.4);
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 40px rgba(59,130,246,0.15);
+    }
+
     /* MOBILE */
     @media (max-width: 640px) {
       .nav-links { display: none; }
@@ -430,10 +442,11 @@
 
   <!-- HERO -->
   <div id="hero">
-    <span class="hero-tag">Founder · Athlete · Builder</span>
+    <img src="nathan.png" alt="Nathan Katzaroff" class="hero-photo" />
+    <span class="hero-tag">Founder · Athlete · Builder · Pre-Med</span>
     <h1>Nathan <span>Katzaroff</span></h1>
     <p class="hero-sub">
-      CEO of Sponge Hydration. Competitive athlete. Pre-med. I build things that push people to perform at their best.
+      Cal Poly SLO · Notre Dame ESTEEM MS · Co-founder of Sponge Hydration. Ice hockey captain turned endurance athlete, aspiring physician, and builder at the intersection of health and technology.
     </p>
     <div class="hero-buttons">
       <a href="#ventures" class="btn btn-primary">See My Work</a>
@@ -446,23 +459,38 @@
     <div class="section-label">About</div>
     <h2>Who I Am</h2>
     <p class="section-intro">
-      I'm a founder, competitive athlete, and aspiring physician driven by one thing: helping people perform at their highest level — physically, mentally, and biologically.
+      I grew up on the ice. I've worked in clinics, built a company, coached people through addiction recovery, and crossed a 38.5-mile trail on Catalina. Everything I do comes back to the same question: how do people perform and heal at their best?
     </p>
     <div class="cards">
       <div class="card">
         <div class="card-icon">💧</div>
         <h3>Founder &amp; CEO</h3>
-        <p>Running Sponge Hydration — a brand built around the science of how the body absorbs and uses water. Because hydration isn't just about drinking more.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🏃</div>
-        <h3>Competitive Athlete</h3>
-        <p>I train hard and compete harder. Sport taught me discipline, coachability, and how to perform when it matters most — the same skills I bring to building.</p>
+        <p>Co-founded Sponge Hydration — a technology company developing a device that automatically tracks water intake and syncs with a smartphone app. Secured funding through pitch competitions, led product development from concept to launch.</p>
       </div>
       <div class="card">
         <div class="card-icon">🩺</div>
-        <h3>Pre-Med</h3>
-        <p>On the path to medicine because I want to understand the human body at its deepest level and bring that into everything I build.</p>
+        <h3>Clinical Background</h3>
+        <p>400+ hours as a medical assistant at Newport Orthopedic Institute across knee, shoulder, hip, spine, and pain management specialties. ABA therapy for children with autism. ER volunteering and OR shadowing at St. Jude Medical Center.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Education</h3>
+        <p>BS Biology, Cal Poly SLO · MS Engineering, Science &amp; Technology Entrepreneurship (ESTEEM), University of Notre Dame · Milton Academy, Boston MA (Class of 2018).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏒</div>
+        <h3>Hockey Background</h3>
+        <p>Assistant Captain, 16AAA Junior Ducks — California state champion. Played two years at Milton Academy (Independent School League champions). Captain &amp; coach of Cal Poly's NCRHA Roller Hockey team — 3rd at Nationals.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏃</div>
+        <h3>Endurance Athlete</h3>
+        <p>OC Marathon finisher (4:22:26). OC Olympic Triathlon (3:13:53). Trans-Catalina Trail — 38.5 miles, 7,500+ ft elevation gain. Endurance sports taught me to embrace discomfort and trust incremental progress.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Service</h3>
+        <p>Running coach at Strides in Recovery — a sober running program at La Cada inpatient rehabilitation center. ESTEEM Legacy Ride — raised $47,493 for Niemann-Pick Type C disease research, won Notre Dame Day.</p>
       </div>
     </div>
   </section>
@@ -471,30 +499,28 @@
   <section id="ventures" class="fade-in">
     <div class="section-label">Ventures</div>
     <h2>What I'm Building</h2>
-    <p class="section-intro">Two projects at the intersection of health, performance, and technology.</p>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">💧</div>
-        <h3>Sponge Hydration</h3>
-        <p>A hydration brand for athletes and high performers built on the science of electrolytes, absorption, and timing — not just "drink 8 glasses a day."</p>
-        <div style="margin-top: 0.75rem;">
-          <span class="tag">Consumer Brand</span>
-          <span class="tag">Sports Science</span>
-          <span class="tag">E-Commerce</span>
+    <p class="section-intro">Health technology built from personal experience — not a trend.</p>
+    <div class="card" style="max-width: 680px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;">
+        <div>
+          <div class="card-icon" style="margin-bottom:0.25rem;">💧</div>
+          <h3 style="margin-bottom:0.25rem;">Sponge Hydration</h3>
+          <p style="color:var(--muted); font-size:0.85rem;">Co-Founder &amp; CEO · Founded June 2024</p>
         </div>
-        <!-- <a href="https://yoursite.com" class="card-link" target="_blank">Visit Sponge →</a> -->
+        <a href="https://www.spongehydration.com" class="card-link" target="_blank" style="white-space:nowrap;">Visit Sponge →</a>
       </div>
-      <div class="card">
-        <div class="card-icon">💪</div>
-        <h3>Gymnify</h3>
-        <p>An AI-powered workout library app built in React Native. Browse, filter, and learn exercises with guided programming — your gym knowledge in your pocket.</p>
-        <div style="margin-top: 0.75rem;">
-          <span class="tag">React Native</span>
-          <span class="tag">Expo</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">AI</span>
-        </div>
-        <!-- <a href="https://github.com/yourusername/gymnify" class="card-link" target="_blank">View on GitHub →</a> -->
+      <p style="color:var(--muted); font-size:0.95rem; line-height:1.75; margin-bottom:1rem;">
+        Sponge is a smart hydration system — a compact magnetic device that clips onto any water bottle and automatically records water intake, paired with an app that tracks your history, builds streaks, and locks your favorite apps (Instagram, TikTok) until you hit your daily goal. No manual logging. No willpower required.
+      </p>
+      <p style="color:var(--muted); font-size:0.95rem; line-height:1.75; margin-bottom:1.25rem;">
+        We built it because both founders watched family members affected by dementia and cognitive decline — and discovered how much proper hydration matters for long-term brain health. First batch shipped April 2026. Available on iOS, Android, and at spongehydration.com.
+      </p>
+      <div>
+        <span class="tag">Health Tech</span>
+        <span class="tag">IoT Device</span>
+        <span class="tag">iOS &amp; Android</span>
+        <span class="tag">Habit Science</span>
+        <span class="tag">Preventive Health</span>
       </div>
     </div>
   </section>
@@ -502,9 +528,9 @@
   <!-- ATHLETICS -->
   <section id="athletics" class="fade-in">
     <div class="section-label">Athletics</div>
-    <h2>Race Results</h2>
+    <h2>Personal Challenges</h2>
     <p class="section-intro">
-      I don't just study performance — I compete. Here's the data.
+      After hockey, I picked up endurance sports. These are first-time events I completed in 2025–2026 — less about the times, more about what training for them taught me.
     </p>
 
     <!-- Triathlon Result -->
@@ -625,24 +651,44 @@
     <p class="section-intro" style="margin-bottom: 2.5rem;">The path isn't linear. It's a series of bets on myself.</p>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-year">Now</div>
-        <div class="timeline-title">CEO, Sponge Hydration</div>
-        <div class="timeline-desc">Leading product, brand, and content strategy for a science-backed hydration company.</div>
+        <div class="timeline-year">2026 — Present</div>
+        <div class="timeline-title">Co-Founder &amp; CEO, Sponge Hydration</div>
+        <div class="timeline-desc">Building a hydration tracking device and app. Applying to medical school.</div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">Now</div>
-        <div class="timeline-title">Building Gymnify</div>
-        <div class="timeline-desc">Developing an AI-powered workout library app in React Native / Expo.</div>
+        <div class="timeline-year">2025 – 2026</div>
+        <div class="timeline-title">Project Engineer, Touchstone Engineering</div>
+        <div class="timeline-desc">Commercial new construction and retrofit projects. Automated a 3-hour weekly reporting workflow to under 15 minutes using Excel and VBA.</div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">Now</div>
-        <div class="timeline-title">Pre-Med Path</div>
-        <div class="timeline-desc">Pursuing medicine alongside entrepreneurship — because understanding the body is the foundation of everything I build.</div>
+        <div class="timeline-year">2024 – 2025</div>
+        <div class="timeline-title">Inside Sales Representative, Tyson Foods</div>
+        <div class="timeline-desc">Managed Southern California pork division accounts after completing grad school.</div>
       </div>
       <div class="timeline-item">
-        <div class="timeline-year">Always</div>
-        <div class="timeline-title">Competitive Athlete</div>
-        <div class="timeline-desc">Training and competing — the original classroom for everything I know about performance.</div>
+        <div class="timeline-year">2023 – 2024</div>
+        <div class="timeline-title">MS ESTEEM, University of Notre Dame</div>
+        <div class="timeline-desc">Master's in Engineering, Science &amp; Technology Entrepreneurship. Capstone consultant for Sloan Valve Company — 50+ stakeholder interviews, market sizing, and product expansion proposal. Raised $47K for Niemann-Pick disease research (Notre Dame Day winner).</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-title">Medical Assistant, Newport Orthopedic Institute</div>
+        <div class="timeline-desc">400+ hours across orthopedic specialties — knee, shoulder, hip, spine, pain management. Direct patient care and clinical documentation.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2018 – 2022</div>
+        <div class="timeline-title">BS Biology, Cal Poly SLO</div>
+        <div class="timeline-desc">Captain &amp; coach of the NCRHA Division II Roller Hockey team — multiple district championships, 3rd place at Nationals. Behavior Interventionist (ABA therapy). Field Supervisor and first responder at the Sports Complex.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2016 – 2018</div>
+        <div class="timeline-title">Milton Academy, Boston MA</div>
+        <div class="timeline-desc">Transferred to compete on the hockey team. Independent School League champions. Graduated 2018.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Growing Up</div>
+        <div class="timeline-title">Ice Hockey — Junior Ducks 16AAA</div>
+        <div class="timeline-desc">Assistant Captain. California state champion. Hockey taught me how to compete, lead, and perform under pressure.</div>
       </div>
     </div>
   </section>
